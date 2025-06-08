@@ -65,7 +65,7 @@ miner.start(1, "0xYourMiningAccountAddress", "your_password")
 
 
 
-＊＊＊＊＊＊＊＊＊＊Node Update Procedure＊＊＊＊＊＊＊＊＊
+# ＊＊＊＊＊＊ Node Update Procedure ＊＊＊＊＊＊
 
 # If the official team releases a node update, you will need to update your node as well.
 
