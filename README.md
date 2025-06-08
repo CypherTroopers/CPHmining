@@ -9,8 +9,7 @@ git clone https://github.com/CypherTroopers/CPHmining.git
 cd CPHmining
 
 ./start.sh
-# Running ./start.sh will install all necessary dependencies via the all-in-one package,
-# start the node, and begin synchronization.
+# Running ./start.sh will install all necessary dependencies via the all-in-one package,start the node, and begin synchronization.
 
 # 3. Check Synchronization Status
 pm2 logs
