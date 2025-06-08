@@ -1,4 +1,4 @@
-## Node and Mining Setup All In One Pack Instructions
+## Node and Mining Setup All In One Pack Instructions(for linux)
 
 # 1. Install Required Package and Clone the Repository
 sudo apt install git
