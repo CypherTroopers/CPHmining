@@ -62,3 +62,33 @@ miner.setEtherbase("0xYourRewardAccountAddress")
 
 # 14. Start mining using the mining account
 miner.start(1, "0xYourMiningAccountAddress", "your_password")
+
+
+
+＊＊＊＊＊＊＊＊＊＊Node Update Procedure＊＊＊＊＊＊＊＊＊
+
+# If the official team releases a node update, you will need to update your node as well.
+
+# 15. Stop the node before updating
+cd go/src/github.com/cypherium/cypher
+
+pm2 stop all
+
+# 16. Pull the latest version and rebuild
+git pull origin main
+
+make clean
+
+# 17. Restart the node
+pm2 restart all
+
+# The update is now complete.
+
+# 18. Reattach to the console and check if mining is still running
+./build/bin/cypher attach ipc:/root/go/src/github.com/cypherium/cypher/chaindbname/cypher.ipc
+
+# 19. Check mining status
+miner.status()
+
+# If it shows "STOP", restart mining with the following command:
+miner.start(1, "0xYourMiningAccountAddress", "your_password")
