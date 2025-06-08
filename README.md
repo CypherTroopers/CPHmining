@@ -1,10 +1,12 @@
 ## Node and Mining Setup All In One Pack Instructions(for linux)
 
 # 1. Install Required Package and Clone the Repository
+ ```
 sudo apt install git -y
-
+ ```
+ ```
 git clone https://github.com/CypherTroopers/CPHmining.git
-
+ ```
 # 2. Navigate to the Directory and Start the Node
 cd CPHmining
 
