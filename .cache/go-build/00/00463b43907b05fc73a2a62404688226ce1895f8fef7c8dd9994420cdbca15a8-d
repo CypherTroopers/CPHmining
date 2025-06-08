@@ -1,0 +1,9 @@
+./doc.go
+./hamming.go
+./popcnt_amd64.go
+./popcount.go
+./popcount_slices.go
+./popcount_slices_amd64.go
+./slices_of_hamming.go
+./popcnt_amd64.s
+./popcount_slices_amd64.s

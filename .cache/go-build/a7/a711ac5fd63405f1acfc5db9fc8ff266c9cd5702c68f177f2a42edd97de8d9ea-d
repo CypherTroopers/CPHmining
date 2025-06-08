@@ -1,0 +1,9 @@
+./accountcmd.go
+./chaincmd.go
+./config.go
+./consolecmd.go
+./main.go
+./misccmd.go
+./retesteth.go
+./retesteth_copypaste.go
+./usage.go

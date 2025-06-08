@@ -1,0 +1,4 @@
+./algorithm.go
+./consensus.go
+./ethash.go
+./sealer.go

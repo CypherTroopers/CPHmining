@@ -1,0 +1,5 @@
+./decode.go
+./doc.go
+./encode.go
+./field.go
+./generate.go

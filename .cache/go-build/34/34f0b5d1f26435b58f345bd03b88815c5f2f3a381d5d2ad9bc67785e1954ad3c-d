@@ -1,0 +1,5 @@
+./cmd.go
+./customflags.go
+./flags.go
+./flags_legacy.go
+./prompt.go

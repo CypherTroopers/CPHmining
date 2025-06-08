@@ -1,0 +1,6 @@
+./decode.go
+./doc.go
+./encode.go
+./iterator.go
+./raw.go
+./typecache.go
