@@ -26,5 +26,39 @@ cd go/src/github.com/cypherium/cypher
 # 6. Check Synchronization Completion
 eth.syncing
 # If the command returns false, it means the synchronization is complete.
-```
 
+# === Account Creation and Mining Configuration ===
+
+# After synchronization is complete, create two accounts:
+# - One for mining
+# - One for receiving mining rewards
+
+# 7. Create mining account (Ed25519)
+personal.newAccountEd25519("your_password")
+
+# 8. Create reward-receiving account (ECDSA)
+personal.newAccount("your_password")
+
+# ⚠️ Make sure to save both wallet addresses.
+# ⚠️ Do not forget the password—you will need it again later.
+
+# 9. Exit the console before restarting the node
+# (Use the following key combination)
+CTRL+C
+
+# 10. Restart the node with PM2
+pm2 restart all
+
+# 11. Reattach to the console
+./build/bin/cypher attach ipc:/root/go/src/github.com/cypherium/cypher/chaindbname/cypher.ipc
+
+# 12. Unlock both accounts
+personal.unlockAccount("0xYourMiningAccountAddress", "your_password")
+
+personal.unlockAccount("0xYourRewardAccountAddress", "your_password")
+
+# 13. Set the reward-receiving address (Etherbase)
+miner.setEtherbase("0xYourRewardAccountAddress")
+
+# 14. Start mining using the mining account
+miner.start(1, "0xYourMiningAccountAddress", "your_password")
