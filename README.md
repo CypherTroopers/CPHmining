@@ -21,3 +21,5 @@ cd go/src/github.com/cypherium/cypher
 ./build/bin/cypher attach ipc:/root/go/src/github.com/cypherium/cypher/chaindbname/cypher.ipc
 
 Once you're in the console using the command above, check whether the synchronization has completed.
+
+If eth.syncing returns false, it means the synchronization is complete.　
