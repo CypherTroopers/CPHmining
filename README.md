@@ -103,7 +103,9 @@ git pull origin main
  ```
 make clean
  ```
-
+ ```
+make cypher
+ ```
 # 17. Restart the node
  ```
 pm2 restart all
