@@ -1,8 +1,0 @@
-Welcome to the Geth JavaScript console!
-
-instance: Geth/v1.9.20-stable-577e7bd8(cypherium-v2.0.0)/linux-amd64/go1.22.0
-at block: 145134 (Fri Sep 08 57178 16:33:12 GMT-0500 (CDT))
- datadir: /root/go/src/github.com/cypherium/cypher/chaindbname
- modules: admin:1.0 debug:1.0 eth:1.0 miner:1.0 net:1.0 personal:1.0 reconfig:1.0 rpc:1.0 txpool:1.0 web3:1.0
-
-> caught interrupt, exiting

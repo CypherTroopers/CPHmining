@@ -1,5 +1,0 @@
-# HSTS 1.0 Known Hosts database for GNU Wget.
-# Edit at your own risk.
-# <hostname>	<port>	<incl. subdomains>	<created>	<max-age>
-ftp.gnu.org	0	0	1749365195	63072000
-go.dev	0	1	1749365121	31536000

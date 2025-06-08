@@ -1,7 +1,0 @@
-./config.go
-./decode.go
-./encode.go
-./error.go
-./parse.go
-./parse.peg.go
-./util.go

@@ -1,7 +1,0 @@
-./conts.go
-./timers.go
-./utils.go
-_cgo_gotypes.go
-api.cgo1.go
-duktape.cgo1.go
-_cgo_import.go

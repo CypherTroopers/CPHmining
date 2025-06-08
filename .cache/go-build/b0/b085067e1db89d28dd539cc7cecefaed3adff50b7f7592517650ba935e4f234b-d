@@ -1,6 +1,0 @@
-./bitmap.go
-./doc.go
-./memsize.go
-./runtimefunc.go
-./type.go
-./runtimefunc.s

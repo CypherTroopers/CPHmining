@@ -1,3 +1,0 @@
-./mmap.go
-./mmap_unix.go
-./msync_unix.go

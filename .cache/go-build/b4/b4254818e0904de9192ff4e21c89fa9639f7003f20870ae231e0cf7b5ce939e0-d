@@ -1,9 +1,0 @@
-./database.go
-./metrics.go
-./net.go
-./node.go
-./nodeevent_string.go
-./table.go
-./ticket.go
-./topic.go
-./udp.go

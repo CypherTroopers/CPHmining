@@ -1,7 +1,0 @@
-./archive.go
-./azure.go
-./download.go
-./env.go
-./gosrc.go
-./pgp.go
-./util.go

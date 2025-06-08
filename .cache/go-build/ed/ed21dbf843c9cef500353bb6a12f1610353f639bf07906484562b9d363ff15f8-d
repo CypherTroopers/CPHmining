@@ -1,7 +1,0 @@
-./async.go
-./azure.go
-./config.go
-./devicetoken.go
-./environments.go
-./persist.go
-./token.go

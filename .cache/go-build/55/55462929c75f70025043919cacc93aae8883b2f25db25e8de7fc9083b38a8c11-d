@@ -1,9 +1,0 @@
-./api.go
-./backend.go
-./gossip.go
-./keyblock.go
-./paceMaker.go
-./proposedChain.go
-./service.go
-./txblock.go
-./util.go
