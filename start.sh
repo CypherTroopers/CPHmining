@@ -39,10 +39,10 @@ tar -xjf gmp-6.1.2.tar.bz2
 cd gmp-6.1.2
 ./configure --prefix=/usr --enable-cxx --disable-static --docdir=/usr/share/doc/gmp-6.1.2
 make
-sudo make install
+make check || echo "※ Some tests may fail and can be ignored."   #← インストール前にテスト
 make html
+sudo make install
 sudo make install-html
-make check || echo "※ Some tests may fail and can be ignored."
 cd ..
 sudo cp -rf /usr/lib/libgmp* /usr/local/lib/
 
