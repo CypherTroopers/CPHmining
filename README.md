@@ -68,7 +68,7 @@ pm2 restart all
  ```
 ./build/bin/cypher attach ipc:/root/go/src/github.com/cypherium/cypher/chaindbname/cypher.ipc
  ```
-# 12. Unlock both accounts
+# 12. Unlock both accounts(If necessary)
  ```
 personal.unlockAccount("0xYourMiningAccountAddress", "your_password")
  ```
@@ -77,7 +77,7 @@ personal.unlockAccount("0xYourRewardAccountAddress", "your_password")
  ```
 # 13. Set the reward-receiving address (Etherbase)
  ```
-miner.setEtherbase("0xYourRewardAccountAddress")
+miner.setEtherbase("0xYourEVMaddress")
  ```
 # 14. Start mining using the mining account
  ```
