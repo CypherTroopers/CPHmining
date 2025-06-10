@@ -49,7 +49,7 @@ sudo cp -rf /usr/lib/libgmp* /usr/local/lib/
 # === 5. Clone and Initialize Cypherium ===
 mkdir -p "$GOPATH/src/github.com/cypherium"
 cd "$GOPATH/src/github.com/cypherium"
-https://github.com/cypherium/cypher.git
+git clone https://github.com/cypherium/cypher.git
 cd cypher
 cp ./crypto/bls/lib/linux/* ./crypto/bls/lib/
 
