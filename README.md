@@ -1,3 +1,5 @@
+##This is a .sh command, so please run it on a clean server with nothing installed.
+The Docker version is still in the works##
 ## Node and Mining Setup All In One Pack Instructions(for linux)
 
 # 1. Install Required Package and Clone the Repository
