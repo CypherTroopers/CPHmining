@@ -53,7 +53,7 @@ personal.newAccountEd25519("your_password")
  ```
 # 8. Create reward-receiving account (ECDSA)
  ```
-personal.newAccount("your_password")
+NO NEED FOR NOW
  ```
 # ⚠️ Make sure to save both wallet addresses.
 # ⚠️ Do not forget the password—you will need it again later.
