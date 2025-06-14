@@ -15,15 +15,25 @@ sudo rm -rf /usr/local/go
 sudo tar -C /usr/local -xzf $GO_TAR
 rm $GO_TAR
 
-# Set Go PATH (persist in ~/.bashrc)
+# === 1.1 Persist environment variables in ~/.bashrc ===
 if ! grep -q 'export PATH=/usr/local/go/bin:$PATH' ~/.bashrc; then
   echo 'export PATH=/usr/local/go/bin:$PATH' >> ~/.bashrc
+fi
+
+if ! grep -q 'export GOPATH=$HOME/go' ~/.bashrc; then
   echo 'export GOPATH=$HOME/go' >> ~/.bashrc
 fi
+
+if ! grep -q 'export GO111MODULE=off' ~/.bashrc; then
+  echo 'export GO111MODULE=off' >> ~/.bashrc
+fi
+
+# === 1.2 Apply changes for current shell session ===
 export PATH=/usr/local/go/bin:$PATH
 export GOPATH=$HOME/go
+export GO111MODULE=off
 
-# === 2. Disable Go Modules ===
+# === 2. Disable Go Modules (redundant if already in bashrc, but explicit) ===
 go env -w GO111MODULE=off
 
 # === 3. Install Required Packages ===
