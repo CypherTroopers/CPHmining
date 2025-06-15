@@ -147,6 +147,8 @@ echo "✅ start-cypher.sh created successfully"
 # === 11. Start with PM2 ===
 cd "$GOPATH/src/github.com/cypherium/cypher"
 pm2 start ./start-cypher.sh --name cypher-node
+STARTUP_CMD=$(pm2 startup | grep sudo)
+eval "$STARTUP_CMD"
 pm2 save
 
 # === 12. Completion Notice ===
