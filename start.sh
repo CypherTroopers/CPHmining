@@ -59,7 +59,7 @@ sudo cp -rf /usr/lib/libgmp* /usr/local/lib/
 # === 5. Clone and Initialize Cypherium ===
 mkdir -p "$GOPATH/src/github.com/cypherium"
 cd "$GOPATH/src/github.com/cypherium"
-git clone https://github.com/CypherTroopers/cypher.git
+git clone --branch Astray --single-branch https://github.com/CypherTroopers/cypher.git
 cd cypher
 git checkout Astray
 cp ./crypto/bls/lib/linux/* ./crypto/bls/lib/
