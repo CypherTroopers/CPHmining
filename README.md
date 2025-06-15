@@ -74,7 +74,7 @@ pm2 restart all
 No need for now
 # 13. Start mining using the mining account
  ```
-miner.start(1, "0xYourEd25519AccountAddress", "your_password")
+miner.start(3, "0xYourEd25519AccountAddress", "your_password")
  ```
 # 14. Set the reward-receiving address (Etherbase)
  ```
@@ -119,5 +119,5 @@ miner.status()
  ```
 # If it shows "STOP", restart mining with the following command:
  ```
-miner.start(1, "0xYourEd25519AccountAddress", "your_password")
+miner.start(3, "0xYourEd25519AccountAddress", "your_password")
  ```
